@@ -1,3 +1,3 @@
 FROM jboss/wildfly
  
-ADD java-web-app.war /opt/jboss/wildfly/standalone/deployments/
+COPY target/java-web-app-1.0.war /opt/jboss/wildfly/standalone/deployments/java-web-app-1.0.war
