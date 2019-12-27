@@ -1,3 +1,3 @@
-FROM jboss/wildfly
- 
-COPY target/java-web-app-1.0.war /opt/jboss/wildfly/standalone/deployments/java-web-app-1.0.war
+FROM tomcat:8.0.20-jre8
+# Dummy text to test 
+COPY target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
